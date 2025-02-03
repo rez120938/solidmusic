@@ -23,11 +23,12 @@ async def new_member_(client: Client, message: Message):
         if member.id == bot_id:
             ChatDB().add_chat(message.chat.id)
             return await message.reply(
-                "Hi, english is my default language.\n"
-                "make me as admin in here with all permissions except anonymous admin\n"
-                "btw, thanks for inviting me to here, to use me, please use /userbotjoin command first.\n"
-                "and for changing language, tap /lang to see all language that supported for me, "
-                "don't forget to subscribe our channel.",
+                "𝐇𝐈,𝐈'𝐌 𝐀 𝐁𝐎𝐓 𝐌𝐔𝐒𝐈𝐂 .\n"
+                "𝐌𝐀𝐊𝐄 𝐌𝐄 𝐀𝐒 𝐀𝐃𝐌𝐈𝐍 𝐈𝐍 𝐇𝐄𝐑𝐄 𝐖𝐈𝐓𝐇 𝐀𝐋𝐋 𝐏𝐄𝐑𝐌𝐈𝐒𝐒𝐈𝐎𝐍𝐒 𝐄𝐗𝐂𝐄𝐏𝐓 𝐀𝐍𝐎𝐍𝐘𝐌𝐎𝐔𝐒 𝐀𝐃𝐌𝐈𝐍 \n"
+                "𝐓𝐎 𝐔𝐒𝐄 𝐌𝐄, 𝐏𝐋𝐄𝐀𝐒𝐄 𝐔𝐒𝐄 /𝐮𝐬𝐞𝐫𝐛𝐨𝐭𝐣𝐨𝐢𝐧 𝐂𝐎𝐌𝐀𝐍𝐃.\n"
+                "𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐈𝐍𝐕𝐈𝐓𝐈𝐍𝐆 𝐌𝐄 𝐓𝐎 𝐇𝐄𝐑𝐄.\n" 
+                "𝐃𝐎𝐍'𝐓 𝐅𝐎𝐑𝐆𝐄𝐓 𝐓𝐎 𝐉𝐎𝐈𝐍 𝐎𝐔𝐑 𝐂𝐇𝐀𝐍𝐍𝐄𝐋",   
+                
                 reply_markup=MarkupKeyboard(
                     [
                         [
@@ -37,6 +38,7 @@ async def new_member_(client: Client, message: Message):
                         [
                             ButtonKeyboard(
                                 "Assistant", url=f"https://t.me/{assistant_username}"
+                            ButtonKeyboard("Owner", url=f"https://t.me/{owner_username}
                             )
                         ],
                     ]
