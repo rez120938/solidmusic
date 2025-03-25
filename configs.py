@@ -19,7 +19,7 @@ class Configs:
     SESSION = getenv("SESSION", "session")
     CHANNEL_LINK = getenv("CHANNEL_LINK", "https://t.me/rezsstoree")
     GROUP_LINK = getenv("GROUP_LINK", "https://t.me/rezsstoree")
-    UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/DoellBarr/solidmusic")
+    UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/rez120938/solidmusic")
     AUTO_LEAVE = int(getenv("AUTO_LEAVE", "1800"))
 
 
