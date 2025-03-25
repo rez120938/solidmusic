@@ -1,5 +1,5 @@
 {
-    "not_an_admin": "**Saya bukan admin di chat ini**",
+    "not_an_admin": "**मैं इस चैट का एडमिन नहीं हूं।**",
     "call_started": "**वॉइस चैट शुरू हुई।**",
     "call_closed": "**वॉइस चैट बंद है।**",
     "volume_changed": "**वॉल्यूम बदलकर {}%.**",
